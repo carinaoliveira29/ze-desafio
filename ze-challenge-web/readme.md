@@ -9,10 +9,10 @@
 
 ## Estrutura do projeto
 
--- Cenário em Gherkin ``features/specs/``
--- Page Objects (elementos e acões das páginas) ``features/pages/``
--- Classe de teste ``features/step_definitions/``
--- Classe de suporte ``features/support/env.rb & features/support/hooks.rb`` 
+- Cenário em Gherkin ``features/specs/``
+- Page Objects (elementos e acões das páginas) ``features/pages/``
+- Classe de teste ``features/step_definitions/``
+- Classe de suporte ``features/support/env.rb & features/support/hooks.rb`` 
 
 ## Executando o projeto
 
