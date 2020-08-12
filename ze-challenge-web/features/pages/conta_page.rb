@@ -6,8 +6,14 @@ class ContaPage < SitePrism::Page
     element :input_cpf, '#signup-email-input-document'
     element :input_celular, '#signup-email-input-phone'
     element :input_idade, '#signup-email-input-age'
-    element :msg_erro, '.css-b9g1ov-textErrorMessage-Input'
-    element :btn_cadastrar, '#signup-email-button-signUp'
+    #element :msg_erro, '.css-b9g1ov-textErrorMessage-Input'
+    element :msg_erro_nome, '#signup-email-input-name-error-message'
+    element :msg_erro_email, '#signup-email-input-email-error-message'
+    element :msg_erro_password, '#signup-email-input-password-error-message'
+    element :msg_erro_cpf, '#signup-email-input-document-error-message'
+    element :msg_erro_celular, '#signup-email-input-phone-error-message'
+    element :msg_erro_idade, '#signup-email-input-age-error-message'
+    element :btn_cadastrar, '#signup-email-button-signup'
 
     def cadastro_feliz(usuario)
         input_nome.set       usuario[:nome]
@@ -27,6 +33,5 @@ class ContaPage < SitePrism::Page
         input_celular.set celular
         input_idade.set idade
     end
-
 
 end

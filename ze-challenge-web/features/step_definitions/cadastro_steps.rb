@@ -17,5 +17,20 @@ Quando("realizo o cadastro com {string}, {string}, {string}, {string}, {string} 
 end
   
 Então("deve ser exibido a seguinte mensagem {string}") do |msg_excecao|
-    expect(@conta.msg_erro.text).to eql msg_excecao
+
+    case 
+    when page.has_css?('#signup-email-input-name-error-message')
+        expect(@conta.msg_erro_nome.text).to eql msg_excecao
+    when page.has_css?('#signup-email-input-email-error-message')
+        expect(@conta.msg_erro_email.text).to eql msg_excecao
+    when page.has_css?('#signup-email-input-password-error-message')
+        expect(@conta.msg_erro_password.text).to eql msg_excecao
+    when page.has_css?('#signup-email-input-document-error-message')
+        expect(@conta.msg_erro_cpf.text).to eql msg_excecao
+    when page.has_css?('#signup-email-input-phone-error-message')
+        expect(@conta.msg_erro_celular.text).to eql msg_excecao
+    when page.has_css?('#signup-email-input-age-error-message')
+        expect(@conta.msg_erro_idade.text).to eql msg_excecao
+    end
+
 end

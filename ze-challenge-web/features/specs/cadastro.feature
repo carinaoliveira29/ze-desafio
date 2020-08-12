@@ -37,4 +37,3 @@ Funcionalidade: Cadastro de usuário
       | Carina Oliveira | carina@teste.com | @carina123      | 90865145024 | 1199015     | 18    | Seu telefone não parece correto       |
       | Carina Oliveira | carina@teste.com | @carina123      | 90865145024 |             | 18    | O campo Telefone não pode ficar vazio |
       | Carina Oliveira | carina@teste.com | @carina123      | 90865145024 | 61991668762 | 15    | Sua idade deve ser maior que 18 anos  |
-      | Carina Oliveira | carina@teste.com | @carina123      | 90865145024 | 61991668762 |       | O campo idade não pode ficar vazio    |
