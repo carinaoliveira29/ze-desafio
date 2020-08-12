@@ -16,5 +16,5 @@ end
 After do
   imagem_arquivo = page.save_screenshot("logs/imagens/evidencia.png")
   imagem_base64 = Base64.encode64(File.open(imagem_arquivo, "rb").read)
-  embed(imagem_base64, "image/png", "Clique aqui para ver a evidência !") 
+ 
 end

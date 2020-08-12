@@ -11,10 +11,10 @@ Funcionalidade: Cadastro de usuário
        
     Quando faço o cadastro do meu usuário:
       | nome    | Carina Oliveira           |
-      | email   | carina.oliveira@testf.com |
+      | email   | carinaa.oliveira@testfi.com |
       | senha   | @carina123                |
       | cpf     | 90865145024               |
-      | celular | 99992268766               |
+      | celular | 88992268766               |
       | idade   | 18                        |                    
     Então deve ser exibido a mensagem "Sucesso"
 
